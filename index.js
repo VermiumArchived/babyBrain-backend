@@ -4,7 +4,7 @@ let names = { male, female };
 var express = require("express");
 var app = express();
 var debug = false;
-const port = 3000;
+var port = process.env.PORT || 8080;
 var bodyParser = require("body-parser");
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
